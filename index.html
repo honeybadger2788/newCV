@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-grid.css">
+    <script src="https://kit.fontawesome.com/1283047e01.js" crossorigin="anonymous"></script>
+    <title>Carosella N. - Fullstack Web Dev</title>
+
+    <meta property="og:title" content="CONTACTAME!" />
+    <meta property="og:description" content="Quería ser escritora, ahora escribo código" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image" content="./public/img/myAvatar.png" />
+    <meta property="og:site_name" content="Carosella N. - Fullstack Web Dev" />
+</head>
+<body onload="main()">
+    <section class="terminal container-md">
+        <div class="windowHeader container-fluid">
+            <i class="fas fa-terminal"></i>
+            <h4>C:/CarosellaNoelia/CV</h4>
+            <div>
+                <i class="fas fa-window-minimize"></i>
+                <i class="fas fa-window-maximize"></i>
+                <i class="fas fa-window-close"></i>
+            </div>
+        </div>
+        <div class="windowBody container-fluid">
+            <h5>Carosella_Noelia@FULLSTACK ~/CV</h5>
+            <div class="menu">
+                $
+                <button class="tabMenu" onclick="openTab('aboutMe')">Acerca_de_mi</button>
+                <button class="tabmenu" onclick="showSubMenu('profExp')">Experiencia_Profesional</button>
+                <button class="tabmenu" onclick="openTab('education')">Estudios</button>
+                <button class="tabmenu" onclick="openTab('skills')">Habilidades</button>
+                <button class="tabmenu" onclick="showSubMenu('porfolio')">Porfolio</button>
+                <button class="tabmenu" onclick="openTab('contact')">Contacto</button>
+            </div>
+            <div id="profExp" class="subMenu">
+                $
+                <button class="tabmenu" onclick="openTab('maquetador')">Maquetador_Web</button>
+                <button class="tabmenu" onclick="openTab('frontend')">Desarrollador_Frontend</button>
+                <button class="tabmenu" onclick="openTab('backend')">Desarrollador_Backend</button>
+            </div>
+            <div id="porfolio" class="subMenu">
+                $
+                <button class="tabmenu" onclick="openTab('play')">Play_and_Joy</button>
+                <button class="tabmenu" onclick="openTab('playdashboard')">Play_y_Joy_Dashboard</button>
+                <button class="tabmenu" onclick="openTab('stickit')">Stick-it_App</button>
+                <button class="tabmenu" onclick="openTab('planet')">Planeta_Fullstack</button>
+            </div>
+            <div id="aboutMe" class="tabcontent container-fluid">
+                <h2>Noelia Carosella</h2>
+                <h3>Desarrolladora Web Full Stack</h2>
+                <p>
+                    Soy una persona en constante búsqueda de nuevos desafíos. Esto me llevó a querer integrarme al mundo de la programación y a descubrir que es algo que me encanta.
+                    Por eso me gustaría insertarme en proyectos que me permitan seguir creciendo como desarrolladora al mismo tiempo que poder aportarle mi experiencia en el campo
+                    de atención al cliente junto a mi compromiso y responsabilidad para con mi trabajo.
+                </p>
+            </div>
+            <div id="maquetador" class="tabcontent container-fluid">
+                <h2>Maquetador Web</h2>
+                    <ul>
+                        <li>Planificación y estimación de desarrollo de la página a realizar.</li>
+                        <li>Traducción del diseño de una página web a componentes web.</li>
+                        <li>Manejo de interacciones del usuario y animaciones de la interfaz.</li>
+                        <li>Implementar en el desarrollo buenas prácticas (responsive, UX).</li>
+                    </ul>
+            </div>
+            <div id="frontend" class="tabcontent container-fluid">
+                <h2>Desarrollador Frontend</h2>
+                    <ul>
+                        <li>Planificación y estimación del desarrollo de la página a realizar.</li>
+                        <li>Traducción del diseño de una página web a componentes web.</li>
+                        <li>Manejo de interacciones del usuario y animaciones de la interfaz.</li>
+                        <li>Implementar en el desarrollo buenas prácticas (responsive, UX).</li>
+                        <li>Manejo de conexiones asíncronas con Ajax y/o Fetch.</li>
+                        <li>Uso de Session y Cookies para almacenado de información.</li>
+                        <li>Implementación de validaciones en JavaScript para formularios.</li>
+                        <li>Mantenimiento y resolución de errores de la página.</li>
+                        <li>Colaborar con los desarrolladores Backend.</li>
+                    </ul>
+            </div>
+            <div id="backend" class="tabcontent container-fluid">
+                <h2>Desarrollador Backend</h2>
+                    <ul>
+                        <li>Planificación y estimación del desarrollo del servidor web.</li>
+                        <li>Creación y puesta en marcha de un servidor web.</li>
+                        <li>Análisis, diseño e implementación de un sistema de base de datos.</li>
+                        <li>Mantenimiento y resolución de errores.</li>
+                        <li>Autenticación y manejo de sesiones de usuarios.</li>
+                        <li>Manejo de conexiones asíncronas a servicios web.</li>
+                        <li>Integración con otras plataformas mediante apis.</li>
+                        <li>Uso de Session y Cookies para almacenado de información.</li>
+                        <li>Colaborar con los desarrolladores Frontend.</li>
+                    </ul>
+            </div>
+            <div id="education" class="tabcontent container-fluid">
+                <h2>Certified Tech Developer</h2>
+                <p>at Digital House</p>
+                <h2>Desarrolladora Web Full Stack</h2>
+                <p>at Digital House</p>
+                <h2>Lic. Comercio Internacional</h2>
+                <p>at UNLaM</p>
+            </div>
+            <div id="skills" class="tabcontent container-fluid">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>MySQL</li>
+                    <li>Sequelize</li>
+                    <li>Postman</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+            <div id="play" class="tabcontent container-fluid">
+                <h2>Play & Joy - E-commerce</h2>
+                <a href="https://playandjoy.herokuapp.com/" target="_blank">Ver Proyecto</a>
+                <p>Experiencia basada en el proyecto integrador realizado en Digital House.</p>
+                <p>Se desarrolló desde el análisis de mercado pasando por el diseño y maquetado de la apariencia del sitio, hasta el diseño de la base de datos y la validación de los mismos.</p>
+                <p>Para el front se utilizó HTML, CSS y javascript para agregar dinamismo.
+                Por el lado del back, se trabajó con Express dentro de Node. Se diseñó la BD usando MySQL y Sequelize como ORM.</p>
+                <p>Además, se insertó el consumo de API's externas para el formulario de registro; se usaron cookies para el guardado de los datos de login del usuario; a través del desarrollo de middlewares, se restringieron los accesos a los diferentes perfiles de usuarios; y para el carrito de compras, se almacenaron los datos utilizando localstorage.</p>
+            </div>
+
+            <div id="playdashboard" class="tabcontent container-fluid">
+                <h2>Play & Joy - Dashboard</h2>
+                <a href="https://playandjoydashboard.herokuapp.com/" target="_blank">Ver Proyecto</a>
+                <p>Experiencia basada en el proyecto integrador realizado en Digital House.</p>
+                <p>Desarrollado enteramente en ReactJS utilizando Hooks.</p>
+                <p>Para el backend se consumen API's propias del e-commerce, a través de Fetch.</p>
+            </div>
+
+            <div id="stickit" class="tabcontent container-fluid">
+                <h2>Stick-it - App</h2>
+                <a href="https://stickit-note-app.herokuapp.com/" target="_blank">Ver Proyecto</a>
+                <p>Proyecto de desarrollo propio, realizado enteramente en ReactJS utilizando Hooks.</p>
+                <p>Se validaron los campos del formulario para que no fuera posible insertar notas en blanco y se elaboró una barra de búsqueda para las notas creadas.</p>
+                <p>Para el backend se creó un CRUD con API's propias, las cuales se consumen a través de Fetch.</p>
+                <p>La idea de este proyecto fue crear una aplicación que comprendiera la mayor cantidad de usos dentro de React.</p>
+            </div>
+
+            <div id="planet" class="tabcontent container-fluid">
+                <h2>Planet Fullstack - Static Web Page</h2>
+                <a href="https://planetafullstack.herokuapp.com/" target="_blank">Ver Proyecto</a>
+                <p>Proyecto propio de sitio web instituccional estático.</p>
+                <p>El objetivo de este proyecto fue llevar a cabo las mejores prácticas tanto para el diseño ux y ui.</p>
+                <p>Se realizó el diseño del logo, el maquetado, la elección de paleta de colores y tipografías.</p>
+                <p>Para mejorar la adaptabilidad del sitio a los diferentes dispositivos, se utilizó el grid de Bootstrap.</p>
+            </div>
+            <div id="contact" class="tabcontent container-fluid">
+                <h2>No dudes en contactarme!</h2>
+                <ul>
+                    <li>Por mail a: noe.carosella@gmail.com</li>
+                    <li>O directamente agendá una cita para conocerme:</li>
+                    <li><img src="./public/img/qr_calendly.png" alt=""></li>
+                </ul>
+            </div>
+    </section>
+    <footer>
+        <div class="redes">
+            <i class="fas fa-bars fa-2x"></i>
+            <a href="https://github.com/honeybadger2788" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://twitter.com/JGirlify" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/jgirlify/" target="_blank"><i class="fab fa-instagram fa-2x"></i></i></a>
+            <a href="https://codepen.io/honeybadger2788" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/noeliabcarosella/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="mailto:noe.carosella@gmail.com?subject=Contacto" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+            <a href="./public/files/ncarosella.pdf" download="CV_Carosella_Noelia" target="_blank"><i class="fas fa-file-download fa-2x"></i></a>
+            
+        </div>
+        <div class="datetime"></div>
+    </footer>
+    <script type="text/javascript" src="./public/js/datetime.js"></script>
+    <script type="text/javascript" src="./public/js/menu.js"></script>
+    <script type="text/javascript" src="./public/js/screen.js"></script>
+</body>
+</html>

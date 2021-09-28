@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap');
+
+:root {
+    --rosa: #ea698b;
+    --negro: #000411;
+    --azul: #4361ee;
+    --cyan: #4cc9f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/windows_background.jpg);
+    background-size:auto;
+    color: var(--azul);
+    font-family: 'Roboto Mono';
+}
+
+html {
+    font-size: 100%;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat';
+    line-height: 2rem;
+}
+
+h2 {
+    color: var(--rosa);
+}
+
+p {
+    padding: 5px 0;
+    line-height: 1.5rem;
+    color: var(--cyan);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.terminal {
+    height: auto;
+    min-height: 75vh;
+    margin: 10vh 0;
+    background-color: var(--negro);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.windowHeader {
+    border-bottom: 1px solid var(--azul);
+    padding: 5px 10px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.windowHeader .fas {
+    margin: 0 0.25rem;
+}
+
+.windowBody {
+    padding: 5px 10px !important;
+    color: var(--rosa);
+}
+
+button {
+    border: none;
+    background-color: var(--negro);
+    color: var(--cyan);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.subMenu {
+    display: none;
+}
+
+.tabcontent {
+    display: none;
+    padding: 1.5rem 0 !important;
+    color: var(--azul);
+}
+
+.redes i {
+    margin: 0 0.5rem;
+    color: var(--azul);
+}
+
+.redes a i:hover {
+    color: var(--cyan);
+}
+
+.datetime {
+    width: max-content;
+}
+
+footer {
+    background-color: var(--negro);
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: var(--negro);
+    }
+    .terminal {
+        margin: 0;  
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .windowHeader {
+        padding: 5px 0 !important;
+    }
+
+    .windowHeader .fas {
+        margin: 0;
+    }
+
+    .redes i {
+        margin: 0;
+    }
+}
+    
+
+@media (max-width: 576px) {
+    .redes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+
+    .datetime {
+        display: none;
+    }
+}
