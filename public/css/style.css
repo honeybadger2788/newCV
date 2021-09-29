@@ -77,6 +77,7 @@ button {
     border: none;
     background-color: var(--negro);
     color: var(--cyan);
+    margin: 0 5px;
 }
 
 button:hover {
@@ -129,6 +130,10 @@ footer {
         border-radius: 0;
     }
 
+    button {
+        margin: 0;
+    }
+
     .windowHeader {
         padding: 5px 0 !important;
     }
@@ -154,4 +159,10 @@ footer {
     .datetime {
         display: none;
     }
+}
+
+@media (min-width: 1400px) {
+    body {
+       background-size: cover;
+    }   
 }
